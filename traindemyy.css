@@ -1,0 +1,227 @@
+img{
+	background-size: cover;
+	image-rendering: auto;
+}
+
+.jumbotron{
+	color: #FFFFFF;
+	background-color: #0267c1;
+}
+
+#first{
+	text-align: center;
+}
+
+.input-group{
+	width: 50%;
+	margin: auto;
+}
+
+@media screen and (max-width: 767px){
+	.input-group{
+		width: 95%;
+	}
+}
+
+
+
+.fa, .fas{
+	width: 100px;
+	color: #FFFFFF;
+}
+
+.btn-warning{
+	background-color: #ffab0d;
+	border-color: #ffab0d;
+}
+
+.form-group{
+	width: 220px;
+	margin-top: 10px;
+
+}
+
+
+@media screen and (max-width: 767px){
+	.form-group{
+		width: 100%;
+	}
+}
+.card img{
+	height: 200px;
+	width: 100%;
+}
+
+
+
+.card-body{
+	height:90px;
+	width:auto;
+}
+
+.card{
+	margin-top:30px;
+}
+
+
+#allskul{
+	margin-top: 15px;
+	text-align: center;
+}
+
+.btn-lg{
+	min-width:200px; 
+}
+
+#hiw{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.zeus{
+	text-align: center;
+}
+
+
+#whyte{
+	text-align: center;
+	margin-top: 50px;
+}
+
+#whyte button{
+	color:#FFFFFF;
+}
+.azu{
+	margin-top:40px;
+	background: #f3f8ff;
+}
+
+.azu {
+	color: #000000;
+	text-align: center;
+}
+
+.fa, .fas{
+	color: #17a2b8;
+}
+
+.meh{
+	margin-top: 40px;
+}
+
+#skuki{
+	margin-top: 100px;
+	text-align: center;
+}
+
+#skuki button{
+	color: #FFFFFF;
+	font-size: 13px;
+}
+
+
+.lap{
+	margin-top: 100px;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.kia{
+	padding-top: 20px;
+	font-weight: 300;
+	font-size:13px;
+}
+
+.mia{
+	padding-top: 20px;
+	font-weight: 300;
+	font-size:13px;
+
+}
+
+.gia{
+	padding-top: 20px;
+	font-weight: 300;
+	font-size:13px;
+}
+
+.bia{
+	padding-top: 20px;
+	font-size:20px;
+}
+
+
+footer .fab{
+	color:#FFFFFF;
+	font-size: 2em;
+	background-color: #e4e8f0;
+}
+
+footer{
+	background-color: rgb(255,171,13,.2);
+	border-top:2px solid #d3d3d3;
+	margin-top: 100px;
+}
+
+footer a{
+	color:#000000;
+}
+
+footer a:hover {
+	color:#000000;
+}
+
+.card-text p{
+	font-weight: 100;
+}
+
+ .card-text h6{
+	text-shadow: 3px 3px 5px #000000;
+}
+
+.card-text a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.card{
+	cursor: pointer;
+}
+
+
+.navbar-nav li{
+	margin-right:20px;
+	padding-top:15px;
+}
+
+
+li a:hover{
+	color: #ffab0d;
+}
+
+.nav-tabs li {
+	margin-left:20px;
+	border-bottom: 1px solid;
+}
+
+.nav-tabs{
+	margin-top:40px;
+	color:#ffab0d;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active:hover{ background-color: #ffab0d; }
+
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color:#ffab0d;
+}
+
+.overlay{
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.form-control{
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}

@@ -1,2 +1,434 @@
-# ChinaemeremOnyenucheya.github.io
-In order to assess my competence in HTML5,CSS and Bootstrap, I tried recreating the webpage of a vocational and technical skills acquisition academy called “traindemy”(www.traindemy.com). In my work, I used “cards” instead of the “image-text overlay” as seen on the academy’s webpage. The pictures I used were randomly extracted from the internet. It is also worthy to note that the academy’s webpage is dynamic (some of the features I saw during the time I recreated it have been repositioned /changed).
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Welcome to Traindemy</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="traindemyy.css">
+
+	
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.js"
+  	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  	crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-yellow">
+		<div class="container">
+ 		 	<a class="navbar-brand" href="#">traindemy</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+ 	 		<ul class="navbar-nav ml-auto">
+      			<li class="nav-item" >
+       			 <a class="nav-link active" href="#">About</a>
+      			</li>
+      			<li class="nav-item">
+        		<a class="nav-link active" href="#">Become a trainer</a>
+      			</li>
+      			<li class="nav-item">
+        		<button class="btn btn-outline-warning" type="login">Login</button>
+      			</li>
+      			<li class="nav-item">
+        		<button class="btn btn-warning" type="button">Get started</button>
+      			</li>
+    		</ul>
+    	</div>
+    </div>	
+</nav>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRYLjMCxTwA0FtLilN3_ZWVZIukDtF451Fex9trgCe1WWMna5xj" class="d-block w-100" alt="..." height="400">
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ15f34dGZuxKf4Rh9ZnnLStQMkUjOvphmDbxJxdrkX_9153y1x" class="d-block w-100" alt="..." height="400">
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyAu1rqFXZK-XhjF90pCvqIZC8XbBsi1yF7PWQH6mei8c8Wyzc" class="d-block w-100" alt="..." height="400">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div id="first">
+    <h2>Acquire Vocational and Technical Skills</h2>
+    <p>Learn from the best schools and Professionals</p>
+    <a href="#"><button type="button" class="btn btn-warning btn-lg">Get started for Free</button></a>
+   </div>
+</div>
+
+
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="What do you want to learn today">
+    <div class="input-group-append">
+      <button class="btn btn-warning" type="button">
+        <i class="fa fa-search"> Search</i>
+      </button>
+    </div>
+ </div>
+
+<div class="container">
+ <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Schools</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Courses</a>
+  </li>
+</ul>
+</div>
+
+<div class="container">
+<form>
+<div class="form-group ml-auto">
+    <label for="exampleFormControlSelect1"></label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>---Select Categories--</option>
+      <option>Art and Craft</option>
+      <option>Agriculture</option>
+      <option>Engineering</option>
+    </select>
+  </div>
+  </form>
+ </div>
+
+ 
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://media.mutualart.com/Images/2019_10/21/05/050404005/8d5ef901-37b9-4498-a7f6-e2b7cdaa99e6_338.Jpeg" class="card-img-top" alt="Sculpture"></a>
+  			<div class="card-body overlay">
+    		<div class="card-text text-white">
+    			<h6>DOT STUDIOS</h6>
+    			<p>SCULPTURE</p>
+    		</div>   
+  			</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://media.istockphoto.com/photos/fashion-designer-picture-id665117072?k=6&m=665117072&s=612x612&w=0&h=Orccag-XAuwBRYUoKwgxMKRIzngyG1fIJywY08jSK00=" class="card-img-top" alt="Fashion"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    				<h6>ZARIS FASHION ACADEMY</h6>
+    				<p>FASHION</p>	
+	   		</div>   
+  			</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://www.growafrica.com/sites/default/files/styles/events_detail_page/public/potato.png?itok=5DpXfnAp" class="card-img-top" alt="Agriculture"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    			<h6>UG AGRO FARMS</h6>
+    			<p>AGRICULTURE</p>
+    		</div>   
+  			</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://netstorage-legit.akamaized.net/images/vllkyt598b79c8k6k.jpg" class="card-img-top" alt="Fashion"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    			<h6>PATTERNS MILLINERY</h6>
+    			<P>FASHION</P>
+    		</div>   
+  			</div>
+			</div>
+		</div>	
+
+	</div>
+
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://3.imimg.com/data3/AN/XE/MY-1217855/galaxy-brand-home-cleaning-raw-material-500x500.jpg" class="card-img-top" alt="Cleaning products"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    			<h6>GLOMAJOS ENTERPRISE</h6>
+    			<P>CLEANING PRODUCTS</P>
+    		</div>   
+  			</div>
+			</div>
+		</div>	
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://www.stylerave.com/wp-content/uploads/2019/10/PSX_20191128_031007.jpg" class="card-img-top" alt="Fashion design"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    			<h6>CHRISTINE'S ATELIER</h6>
+    			<P>FASHION DESIGN</P>
+    		</div>   
+  			</div>
+			</div>
+		</div>	
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://d1ralsognjng37.cloudfront.net/def56079-2b25-4892-ba00-f29a324cd70c.jpeg" class="card-img-top" alt="Culinary"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    			<h6>BITOS KITCHEN</h6>
+    			<P>CULINARY</P>
+    		</div>   
+  			</div>
+			</div>
+		</div>	
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://www.simplybusiness.co.uk/media/articles/2018/06/how-to-become-a-painter-and-decorator.jpg" class="card-img-top" alt="Fine art"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    			<h6>NIMI IZULU/THE PAINTER...</h6>
+    			<P>FINE ART</P>
+    		</div>   
+  			</div>
+			</div>
+		</div>	
+	</div>
+
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://www.artistsatplay.com.au/wp-content/uploads/2019/06/MAC-Cosmetics.jpg" class="card-img-top" height="200" width="300" alt="Makeup"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    			<h6>ESTHORICA BEAUTY SCHOOL</h6>
+    			<P>MAKEUP & BEAUTY </P>
+    		</div>   
+  			</div>
+			</div>
+		</div>	
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://fashionschool.com/wp-content/uploads/2018/05/21-1.jpg" class="card-img-top" alt="Fashion design"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    			<h6>MO'BELLEZA LIFESTYLE & B...</h6>
+    			<P>FASHION DESIGN</P>
+    		</div>   
+  			</div>
+			</div>
+		</div>	
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://investindrc.cd/images/2016/03/01/agriculture2_frontdemocrate_large.jpg" class="card-img-top" alt="Agriculture"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    			<h6>PS NUTRAC FARMS</h6>
+    			<P>AGRICULTURE</P>
+    		</div>   
+  			</div>
+			</div>
+		</div>	
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card">
+  			<a href="#"><img src="https://www.topendpartypeople.com.au/wp-content/uploads/2019/04/Craft-Classes-Cartoon.png" class="card-img-top" alt="Art"></a>
+  			<div class="card-body bg-dark">
+    		<div class="card-text text-white">
+    			<h6>SPOOF ACADEMY</h6>
+    			<P>ART AND CRAFT</P>
+    		</div>   
+  			</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+
+
+<div id="allskul">
+	<a href="#"><button type="button" class="btn btn-warning btn-lg">All Schools</button></a>
+</div>
+
+<div id="hiw">
+	<h5>How it Works</h5>
+</div>
+
+<div class="container zeus">
+	
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<img src="https://traindemy.com/assets/img/learn.png">
+			<p>Select Course</p>
+		<div class="row">
+
+		<div class="col-md-12">
+				<p>Choose from a wide range of Vocational skills of your choice</p>
+		</div>
+		</div>	
+		</div>
+	<div class="col-md-3 col-sm-6">
+		<img src="https://traindemy.com/assets/img/select_course.png">
+		<p>Learn Convieniently</p>
+		<div class="row">
+			<div class="col-md-12">
+				<p>Access online training with your mobile devices or computer</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3 col-sm-6">
+		<img src="https://traindemy.com/assets/img/practice.png">
+		<p>Physical Practice</p>
+		<div class="row">
+			<div class="col-md-12">
+				<p>Bring your crafts to life with tools and workspaces near you</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3 col-sm-6">
+		<img src="https://traindemy.com/assets/img/certificate.png">
+		<p>Get Certified</p>
+		<div class="row">
+			<div class="col-md-12">
+				<p>Obtain certificate and become a professional in respective fields</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+<div id="whyte">
+	<a href="#"><button type="button" class="btn btn-warning btn-lg">Start Learning</button></a>
+</div>
+
+<div class="jumbotron jumbotron-fluid azu">
+	<div class="container">
+  		<div>
+    		<h4>Strength in Numbers</h4>
+   		</div>
+
+   	<div class="row meh">
+
+   		<div class="col-sm-4">
+   			<i class="fas fa-graduation-cap"></i>
+   			<h6>2,000+</h6>
+   			<p>Traindemy graduates and counting</p>
+   		</div>
+
+   		<div class="col-sm-4">
+   			<i class="fas fa-check"></i>
+   			<h6>30+</h6>
+   			<p>Vocational Experts partnering to build great people</p>
+   		</div>
+
+   		<div class="col-sm-4">
+   			<i class="fas fa-chart-line"></i>
+   			<h6>5,000+</h6>
+   			<p>Products by Trainers</p>
+   		</div>
+   	</div>
+</div> 	
+</div>
+
+<div id="skuki">
+    <h3>Now you can</h3>
+    <p>Select from a wide range of skills and talent coaching.</p>
+    <a href="#"><button type="button" class="btn btn-warning btn-lg">GET STARTED</button></a>
+ </div>
+
+
+<footer>
+	<div class="container">
+
+		<div class="row lap">
+			<div class="col-md-3 col-6"><strong>Home</strong>
+        <div class="row kia">
+          <div class="col-lg-12"><a href="#">About</a>
+            <div class="row">
+              <div class="col-lg-12"><a href="#">How it works</a>
+                <div class="row">
+                  <div class="col-lg-12"><a href="#">Our Team</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>	
+		
+			<div class="col-md-3 col-6"><strong>Utility</strong>
+          <div class="row mia">
+            <div class="col-lg-12"><a href="#">Get started</a>
+              <div class="row">
+                <div class="col-lg-12"><a href="#">Mobile App</a>
+                  <div class="row">
+                    <div class="col-lg-12"><a href="#">Report a bug</a>
+                      <div class="row">
+                        <div class="col-lg-12"><a href="#">Privacy policy</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+		
+			<div class="col-md-3 col-6"><strong>Support</strong>
+        <div class="row gia">
+          <div class="col-lg-12"><a href="#">FAQS</a>
+            <div class="row">
+              <div class="col-lg-12"><a href="#">Contact Us</a>
+                <div class="row">
+                  <div class="col-lg-12"><a href="#">Terms of Service</a>
+                    <div class="row">
+                      <div class="col-lg-12"><a href="#">Privacy Policy</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		
+			<div class="col-md-3 col-6"><strong>Social Links</strong>
+        <div class="row bia">
+          <div class="col-lg-12"><a href="#"><i class="fab fa-facebook-square"></i></a> <a href="#"><i class="fab fa-twitter-square"></i></a>  <a href=""><i class="fab fa-linkedin"></i></a></div>
+        </div>
+      </div>
+		</div>
+
+	</div>
+
+</footer>
+
+
+
+</body>
+</html>
